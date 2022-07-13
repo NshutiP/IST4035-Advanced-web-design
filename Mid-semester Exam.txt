@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+	
+	    <title>Nairobi Food</title>
+        
+        <style>
+            
+            body {
+                background-color: #F7D7D4;
+                text-align: center;
+                max-width: 960px;
+                margin: auto;
+            }
+
+            h1 {
+                padding-top: 5px;
+                font-style: normal;
+                font-family: "audiowide", sans-serif;
+                color: #FE2712;
+            }
+
+            h2 {
+                color: #FC600A;
+            }
+
+            ul {
+                padding: 5px 0;
+            }
+
+            ul li {
+                font-style: normal;
+	            font-family: "Sofia", sans-serif;
+                list-style-type: none;
+                color: #FB9902;
+            }
+
+            p {
+                font-style: normal;
+                font-family: "trirong", sans-serif;
+                font-size: small;
+            }
+            .price {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 10px;
+                color: #342309;
+            }
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) { 
+
+                body {
+                    width: 100%;
+                }
+
+            }
+
+            /* medium devices (tablets) */
+            @media only screen and (max-width: 992px) {
+
+                body {
+                    width: 80%;
+                }
+
+            }
+
+            /* Small devices (phones) */
+            @media only screen and (max-width: 400px) {
+                
+                body {
+                   width: 60%;
+                }
+
+            }
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <h1>Nairobi Food Restaurant Menu</h1>
+
+        <ul id="breakfast">
+
+            <h2>Breakfast Menu</h2>
+
+            <li><b>Grilled Fingerlings</b></li>
+
+                <p>
+                    Grilled potatoes with a western flair served with sauce of choice
+                </p>
+
+                <p class="price"> /- 1,800 KES </p>
+
+            <li><b>Asian Pear Salad</b></li>
+
+                <p>
+                    Crisp pears and pecans with tender frisee, and maple syrup with cheese
+                </p>
+
+                <p class="price"> /- 2,000 KES </p>
+
+            <li><b>Smothered Chicken</b></li>
+
+                <p>
+                    Grilled chicken breast topped with mushrooms, onions and cheese
+                </p>
+
+                <p class="price"> /- 1,750 KES </p>
+
+            <li><b>Roasted Acorn Squash</b></li>
+
+                <p>
+                    Spicy-sweet, soft wedges potatoes which makes a no-fuss holiday meal
+                </p>
+
+                <p class="price"> /- 1,100 KES </p>
+
+            <li><b>French Onion Sooup</b></li>
+
+                <p>
+                    Rustic french onion soup with a sourdough bread and melted cheese
+                </p>
+
+                <p class="price"> /- 1,250 KES </p>
+
+        </ul>
+
+        <ul id="main-meal">
+
+            <h2>Main Meal Menu</h2>
+
+            <li><b>Grilled Chicken</b></li>
+
+                <p>Grilled Chicken breast in a creamy dill sauce,
+                    served with french fries or rice
+                </p>
+
+                <p class="price"> /- 2,500 KES </p>
+
+            <li><b>Butternut Squash Risotto</b></li>
+
+                <p>
+                    Butternut squash and baby spinach risotto with sage and parmesan
+                </p>
+
+                <p class="price"> /- 2,850 KES </p>
+
+            <li><b>Shrimp</b></li>
+
+                <p>
+                    A large platter of shrimp, served with garlic butter
+                </p>
+
+                <p class="price"> /- 2,800 KES </p>
+
+            <li><b>Gruyere Cheese Salad</b></li>
+
+                <p>
+                    Warm gruyere cheese and roasted vegetable salad with olive oil
+                </p>
+
+                <p class="price"> /- 1,800 KES </p>
+
+            <li><b>Tuna Carpaccio</b></li>
+                
+                <p>
+                    Sliced, lightly seared raw yellowfin tuna with vierge sauce and black olive oil
+                </p>
+
+                <p class="price"> /- 2,550 KES </p>
+
+        </ul>
+
+        <ul id="dessert">
+
+            <h2>Dessert Menu</h2>
+
+            <li><b>Caramel Cake</b></li>
+
+                <p>
+                    A decadent cake with a vanilla center
+                </p>
+
+                <p class="price"> /- 1,000 KES </p>
+
+            <li><b>Chocolate Cake</b></li>
+
+                <p>
+                    A soft and moist cake with a caramel center
+                </p>
+
+                <p class="price"> /- 800 KES </p>
+
+            <li><b>Brownie Ala Mode</b></li>
+
+                <p>
+                    Decadent brownie topped with vanilla ice cream
+                </p>
+
+                <p class="price"> /- 1,200 KES </p>
+
+            <li><b>Date Pudding</b></li>
+
+                <p>
+                    With butterscotch sauce and vanilla ice cream
+                </p>
+
+                <p class="price"> /- 1,000 KES </p>
+
+            <li><b>Ice Cream</b></li>
+
+                <p>
+                    Two scoops of the most delicious flavours in town
+                </p>
+
+                <p class="price"> /- 700 KES </p>
+
+        </ul>
+
+        <ul id="drinks">
+
+            <h2>Drinks Menu</h2>
+
+            <li><b>Fresh Juice</b></li>
+
+                <p class="price"> /- 800 KES </p>
+
+            <li><b>Mineral Water</b></li>
+
+                <p class="price"> /- 500 KES </p>
+
+            <li><b>Milk Shake</b></li>
+
+                <p class="price"> /- 1,200 KES </p>
+
+            <li><b>Ice Tea</b></li>
+
+                <p class="price"> /- 800 KES </p>
+
+            <li><b>Soda</b></li>
+                
+                <p class="price"> /- 500 KES </p>
+
+        </ul>
+        
+    </body>
+
+</html>

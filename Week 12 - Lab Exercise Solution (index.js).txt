@@ -1,0 +1,75 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+//const fs = require('fs');
+const app = express();
+const port = 3000;
+const jsonParser = bodyParser.json();
+//const fileName = 'students.json';
+
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'bob',
+  password: 'psswd123',
+  database: 'schooldb'
+});
+connection.connect();
+
+// Load data from file
+/*
+let rawData = fs.readFileSync(fileName);
+let data = JSON.parse(rawData);
+*/
+
+app.set('views', 'views');
+app.set('view engine', 'hbs');
+app.use(express.static('public'));
+
+
+app.get('/', (request, response) => {
+    response.render('home');
+});
+
+// This is a RESTful GET web service
+app.get('/students', (request, response) => {
+
+    let sql = "SELECT id, name FROM students";
+    connection.query(sql, function (err, rows, fields) {
+        let data = [];
+        if (err) console.log(err.sqlMessage);
+            
+        for (let i = 0; i < rows.length; i++) {
+            let rowObject = {
+                id: rows[i].id,
+                name: rows[i].name
+            }
+            data.push(rowObject);
+        }
+        data.sort((a, b) => (a.name > b.name) ? 1 : -1 );
+        response.send(data);
+    });
+});
+
+// This is a RESTful POST web service
+app.post('/students', jsonParser, (request, response) => {
+
+    let sql = `INSERT INTO students (id, name) VALUES ` + 
+        `(${request.body.id}, '${request.body.name}')`;
+    connection.query(sql, function (err, result) {
+        if (err) {
+            console.log(err.sqlMessage);
+            response.end();
+
+        } else {
+            console.log('Records inserted: ' + result.affectedRows);
+            response.end();
+        }   
+    });
+    /*
+    data.push(request.body);
+    fs.writeFileSync(fileName, JSON.stringify(data, null, 2));
+    response.end(); */
+});
+
+app.listen(port);
+console.log('server listening on port 3000');

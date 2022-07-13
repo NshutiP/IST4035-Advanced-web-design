@@ -1,0 +1,280 @@
+html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+	margin: 0;
+}
+
+body {
+	min-width: 100%;
+	min-height: 100%;
+	font-family: Ubuntu;
+    background-color: white;
+    padding: 0%;
+}
+
+.constrain {
+	max-width: 450px;
+}
+
+.outer-container {
+    height: 100%;
+}
+
+.top-bar {
+	height: 75px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+		0px 0px 1px rgba(0, 0, 0, 0.04);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.top-bar a img {
+	height: 8em;
+	width: 8em;
+}
+
+.main-body {
+    width: 100%;
+    text-align: center;
+	padding: 70px 0;
+}
+
+h1 {
+	font-size: 64px;
+	line-height: 75px;
+	margin: 15px 0;
+    font-weight: 500;
+	font-family: "Trirong", serif;
+	color: #051922;
+}
+
+p {
+	line-height: 40px;
+	font-size: 35px;
+	font-weight: 30;
+    text-align: center;
+	font-family:"Sofia", sans-serif;
+	color: #436baa;
+}
+
+ul {
+	padding: 30px 0;
+    font-weight: 700;
+    margin-right: 14px;
+    list-style-type: none;
+}
+
+ul li {
+	padding: 20px 0;
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+}
+
+.text-content {
+    width: fit-content;
+    padding: 0%;
+}
+
+.header-bold {
+	font-weight: 700;
+}
+
+.btn {
+	text-decoration: none;
+	display: block;
+	width: 225px;
+	padding: 15px 0;
+	border-radius: 50px;
+	margin: 30px auto;
+	font-weight: 600;
+	text-align: center;
+}
+
+.btn-primary {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+	background-color: #4b5092;
+	color: #ffffff;
+    padding: 10px 20px;
+}
+
+.btn-secondary {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+	background-color: transparent;
+	color: #436baa;
+    border: 2px solid #4b5092 ;
+    padding: 7px 20px;
+}
+
+a.btn-primary:hover {
+    background-color: transparent;
+    color: #4b5092;
+    border: 2px solid #4b5092 ;
+}
+
+a.btn-secondary:hover {
+    background-color: #4b5092;
+    color: #fff;
+}
+
+.footer-area {
+    background-color: #051922;
+    color: #fff;
+    height: auto;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-area1 {
+	background-color: #051922;
+    color: #fff;
+    height: auto;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+#copyright {
+    margin: 0;
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+.panel {
+	border-radius: 30px;
+	padding: 60px 40px;
+	margin: 25px 0;
+	padding-top: 10px;
+}
+
+.panel-blue {
+	background: #e4f0ff;
+}
+
+.panel-purple {
+	background: rgba(114, 122, 239, 0.1);
+}
+
+.panel-blue h1 {
+	margin-top: 0;
+	padding-top: 0;
+	text-align: center;
+	font-family: "Trirong", serif;
+	color: #051922;
+}
+
+.panel-blue h2, .panel-purple h2 {
+	margin-top: 0;
+	padding-top: 0;
+	text-align: left;
+	font-family: "Trirong", serif;
+	color: #051922;
+}
+
+ol {
+	list-style-type: inherit;
+}
+
+.about-us, .panel-blue ol {
+	line-height: 30px;
+	font-size: 20px;
+	font-style: normal;
+	font-family: "Sofia", sans-serif;
+	color: #436baa;
+	text-align: left;
+}
+
+.services, .panel-purple ol, .panel-purple p {
+	line-height: 30px;
+	font-size: 20px;
+	font-style: normal;
+	font-family: "Sofia", sans-serif;
+	color: #436baa;
+	text-align: left;
+}
+
+.service-images {
+	height: 15em;
+	width: 25em;
+	text-align: center;
+	border-radius: 10%;
+	text-shadow: 5px 5px 5px #436baa;
+	margin-top: 10px;
+}
+
+.prohibitions img {
+	height: 10em;
+	width: 10em;
+	padding: 0 80px;
+}
+
+.contact-us {
+	line-height: 30px;
+	font-size: 20px;
+	font-style: normal;
+	font-family: "Sofia", sans-serif;
+	color: #436baa;
+	text-align: center;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	html, body {
+        min-height: 100%;
+    }
+    .constrain {
+		max-width: 100%;
+	}
+	.outer-container {
+		margin: 0 10%;
+	}
+	.top-bar {
+		box-shadow: none;
+		display: flex;
+		justify-content: space-between;
+	}
+	.top-menu {
+		display: flex;
+		width: 30%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.hero-section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row-reverse;
+	}
+	.hero-section img {
+		width: 45%;
+	}
+	.text-content {
+		text-align: center;
+	}
+	.btn {
+		margin: 35px 0;
+	}
+
+	#copyright {
+		text-align: left;
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+
+/* Small devices (phones) */
+@media only screen and (max-width: 400px) {
+	.service-images {
+		width: 300px;
+		height: auto;
+	}
+}

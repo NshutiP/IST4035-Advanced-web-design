@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Example 4</title>
+        <script>
+            function changeColor(color) {
+                document.body.style.backgroundColor = color;
+            }
+            function textColor(color) {
+                document.body.style.color = color;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Click a button to change the color</h1>
+        <form action="">
+            <fieldset>
+                <input
+                    type="button"
+                    value="blue"
+                    onclick="changeColor('blue'); textColor('black')"
+                />
+                <input
+                    type="button"
+                    value="white"
+                    onclick="changeColor('white'); textColor('yellow')"
+                />
+                <input
+                    type="button"
+                    value="orange"
+                    onclick="changeColor('orange'); textColor('green')"
+                />
+                <input
+                    type="button"
+                    value="yellow"
+                    onclick="changeColor('yellow'); textColor('red')"
+                />
+                <input
+                    type="button"
+                    value="cyan"
+                    onclick="changeColor('cyan'); textColor('pink')"
+                />
+            </fieldset>
+        </form>
+    </body>
+</html>
